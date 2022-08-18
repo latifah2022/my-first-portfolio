@@ -12,11 +12,12 @@ body {
 
 a {
     color: #5c2107;
-    text-decoration:underline;   
+    text-decoration:underline;  
 }
 
 p {
     font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header {
@@ -32,8 +33,9 @@ h2 {
     width: 20%;
 } 
 
-footer {
-    justify-content: center;
+footer,
+strong {
+    color: #672105;
 }
 
 .name {
@@ -44,9 +46,9 @@ footer {
 }
 
 .links {
-    font-size: 15px;
+    font-size: 20px;
     float: left;
-    padding-top: 25px;
+    padding-top: 10px;
 }
 
 .links ul {
@@ -58,14 +60,20 @@ footer {
 }
 
 .zero {
-    height: 130px;
+    height: 160px;
     width: 100%;
     margin-bottom: 40px;
     background-image: url(../images/pexels-jan-kroon-1155019.jpg);
     background-size: cover;
     background-position: center;
+    justify-content: space-between;
 }
-/* relative abd ablosute*/
+
+.my-pic {
+    height: 60%;
+    width: 10%;
+    justify-content: flex-start;
+}
 
 .zero-header {
     font-size: 25px;
@@ -74,7 +82,7 @@ footer {
 }
 
 .content {
-    margin-left: 20px;
+    margin-left: 30px;
     color: #5f1a05;
     border: 10px;
 
@@ -86,8 +94,7 @@ footer {
 }
 
 .about-me-header {
-    width: 30%;
-    border-right: blue;
+    width: 20%;
 }
 
 .aboutme {
@@ -96,16 +103,20 @@ footer {
 }
 
 .work {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     justify-content: space-evenly;
     display: flex;
 }
 
+.work-header {
+    width: 20%;
+}
+
 .work-figures {
-    border: solid 2px black;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 80%;
 }
 .figure {
     display: flex;
@@ -116,20 +127,7 @@ footer {
 
 h3, h4 {
     text-align: center;
-}
-.card1 {
-    /* justify-content: center; */
-}
-
-.card2 {
-    /* justify-content: flex-end; */
-}
-
-.card4 {
-    
-}
-.card5  {
-
+    font-size: 12px;
 }
 
 .work-1 {
@@ -156,14 +154,6 @@ h3, h4 {
     color: #3a1608;
 }
 
-.header1 {
-    font-size: 15px;
-}
-
-.subheader2 {
-    font-size: 8px;
-}
-
 .contact {
     display: flex;
     font-size: 15px;
@@ -174,28 +164,29 @@ h3, h4 {
     margin: 40px;
     display: inline;
     text-decoration: underline;
+    width: 80%;
 }
 
 .contact-C a {
     color: #5f2812;
+    font-style: italic;
+    display: inline;
 
 }
 .contact-header {
     font-family: 'Courier New', Courier, monospace;
+    width: 20%;
 }
 
-/* @media screen and (max-with:700px) {
-    .work {
-        width: 100%;
-    }
-    body {
+@media screen and (max-with:792px) {
+    body {    
         background-color: #a4a1a1;
     }
-} */
+} 
 
 
 @media screen and (min-with:792px) {
-    .work-figures {    
+    .work {    
         flex-direction: row;
     }
 }

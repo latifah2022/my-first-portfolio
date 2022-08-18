@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #f7dacd;
+    background-color: #f7d7cd;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
 }
@@ -182,16 +182,18 @@ h3, h4 {
     color: rgb(78, 74, 74);
 }
 
-@media screen and (max-with:792px) {
+@media screen and (min-with:320px) {
     body {    
-        background-color: #a4a1a1;
+        background: #a4a1a1;
     }
 } 
 
 
-@media screen and (min-with:792px) {
-    .work {    
+/*@media only screen and (min-with:480px) {
+    /* .work {    
+        flex-direction: row;
+    } */
+    /* .work-1 {
         flex-direction: row;
     }
-}
-
+} */

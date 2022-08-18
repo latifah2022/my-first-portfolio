@@ -1,20 +1,18 @@
 * {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     background-color: #f7dacd;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
+    margin: 0px;
 }
-
-::se
 
 a {
     color: #f7dacd;
-    text-decoration:underline;
-    
+    text-decoration:underline;   
 }
 
 p {
@@ -27,9 +25,12 @@ header {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 7px;
     display: flex;
+    justify-content: space-between;
 }
 
-nav 
+h2 {
+    width: 20%;
+} 
 
 footer {
     justify-content: center;
@@ -69,30 +70,42 @@ footer {
 .zero-header {
     font-size: 25px;
     color: #89280b;
-    justify-content: left;
+    justify-content: flex-start;
 }
 
 .content {
-    margin-left: 200px;
-    margin-right: 20px;
+    margin-left: 20px;
     color:#89280b;
     border: 10px;
 
 }
 
 .about-me { 
-    margin-bottom: 30px;
+    display: flex;
+    margin-bottom: 40px;
 }
 
 .about-me-header {
-    
+    width: 30%;
+    border-right: blue;
 }
 
+.aboutme {
+    width: 80%;
 
+}
 
 .work {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     justify-content: space-evenly;
+    display: flex;
+}
+
+.work-figures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:40;
 }
 
 .card1 {
@@ -116,28 +129,10 @@ footer {
     color: rgb(156, 68, 68);
 }
 
-.work-2 {
-    border: 5px solid;
-    width: 200px;
-    height: 100px;
-    color: rgb(156, 68, 68);
-}
-
-.work-3 {
-    border: 5px solid;
-    width: 200px;
-    height: 100px;
-    color: rgb(156, 68, 68);
-}
-
-.work-4 {
-    border: 5px solid;
-    width: 200px;
-    height: 100px;
-    color: rgb(156, 68, 68);
-}
-
-.work-5 {
+.work-2,
+.work-3,
+.work-4,
+.work-5{
     border: 5px solid;
     width: 200px;
     height: 100px;
@@ -149,7 +144,7 @@ footer {
 .work-3:hover,
 .work-4:hover,
 .work-5:hover{
-    color: #907a71;
+    color: #3a1608;
 }
 
 .header1 {
@@ -161,14 +156,27 @@ footer {
 }
 
 .contact {
-    display: inline;
+    display: flex;
     font-size: 15px;
+
+}
+
+.contact-C {
+    margin: 40px;
+    display: inline;
+    text-decoration: underline;
 }
 
 .contact-header {
     font-family: 'Courier New', Courier, monospace;
 }
 
+@media screen and (max-with:700px) {
+    .content {
+        width: 100%;
+        background-color: #a4a1a1;
+    }
+}
 
 
 

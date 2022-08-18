@@ -70,9 +70,10 @@ strong {
 }
 
 .my-pic {
-    height: 60%;
-    width: 10%;
-    justify-content: flex-start;
+    height: 80%;
+    width: 15%;
+    display: flex;
+    float: right;
 }
 
 .zero-header {
